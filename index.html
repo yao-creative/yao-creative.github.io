@@ -7,6 +7,7 @@
         <meta name="author" content="">
         <title>Yi Yao Tan's Resume</title>
         <!-- CSS FILES -->
+        <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic' rel='stylesheet' type='text/css'>
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;300;400;700;900&display=swap" rel="stylesheet">
@@ -15,73 +16,6 @@
         <link rel="stylesheet" href="css/magnific-popup.css">
         <link href="css/aos.css" rel="stylesheet">
         <link href="css/templatemo-nomad-force.css" rel="stylesheet">
-        <style>
-            .timeline {
-                list-style: none;
-                padding: 0;
-                margin: 0;
-                display: grid;
-                grid-template-columns: repeat(3, 220px);
-                justify-content: center;
-            }
-            .timeline li {
-                grid-column: span 2;
-                text-align: center;
-                border-radius: 65px;
-                color: #fff;
-                font-weight: bold;
-                font-size: 25px;
-                line-height: 1.5em;
-                font-family: sans-serif;
-                position: relative;
-                padding: 20px;
-                border: 20px solid #0000;
-                background: linear-gradient(#e71e07 0 0) content-box,
-                            linear-gradient(var(--c, #fcd000) 0 0) padding-box,
-                            linear-gradient(var(--d, 90deg), #0000 75%, #42b132 0) border-box;
-            }
-            .timeline li:nth-child(even) {
-                grid-column-end: -1;
-                --d: -90deg;
-                --c: #009cda;
-            }
-            .timeline li:not(:last-child) {
-                margin-bottom: -20px;
-            }
-            .timeline li:before,
-            .timeline li:after {
-                content: "";
-                display: block;
-                height: 0.6em;
-            }
-            .timeline time {
-                position: absolute;
-                font-size: 0.65em;
-                left: calc(100% + 50px);
-                top: 50%;
-                transform: translateY(-50%);
-                white-space: nowrap;
-            }
-            .timeline li:nth-child(even) time {
-                left: auto;
-                color: #000;
-                right: calc(100% + 50px);
-            }
-            .timeline time:before {
-                content: "";
-                position: absolute;
-                height: 10px;
-                top: calc(50% - 5px);
-                right: calc(100% + 5px);
-                width: 65px;
-                background: repeating-linear-gradient(-90deg, #fcd000 0 5px, #0000 0 10px) 50%/100% 2px no-repeat;
-            }
-            .timeline li:nth-child(even) time:before {
-                right: auto;
-                left: calc(100% + 5px);
-                background: repeating-linear-gradient(90deg, #009cda 0 5px, #0000 0 10px) 50%/100% 2px no-repeat;
-            }
-        </style>
     </head>
     <body>
         <main>
@@ -139,33 +73,32 @@
                         <div class="col-12">
                             <h2 class="mb-5 text-center" data-aos="fade-up">Education</h2>
                         </div>
-                        <div class="col-12" data-aos="fade-up">
-                            <ul class="timeline">
-                                <li>
-                                    <time datetime="2023-10">October 2023 - September 2024</time>
-                                    Msc Mathematics and Foundations of Computer Science, University of Oxford
-                                    <ul>
-                                        <li>Interest in Probability and Networks</li>
-                                        <li>Courses: Chaos Theory and Non Linear Dynamics, Algorithmic Foundations of Collective Decision Making, Probabilistic Combinatorics, Graph Theory, Information Theory, Computational Game Theory, Networks</li>
-                                        <li>Seminars: Networks (Mathematical Institute), Complexity Economics (INET)</li>
-                                        <li>Societies: Volleyball Men’s M1 University team, Hertford Orchestra, Turl Street Orchestra</li>
-                                    </ul>
-                                </li>
-                                <li>
-                                    <time datetime="2020-09">September 2020 - June 2023</time>
-                                    Bachelor of Science Mathematics and Computer Science, École Polytechnique
-                                    <ul>
-                                        <li>GPA: 3.94</li>
-                                        <li>Awards: Intel Andy Grove Scholarship, Outstanding Student in contribution to the Ecole Polytechnique Community</li>
-                                        <li>Relevant Coursework: Measure and Integration Theory, Differential Geometry, Convex Optimization and Optimal Control, Numerical Linear Algebra, Parallel and Distributed Computing, Numerical Analysis, Complexity Theory, Analysis of Algorithms, Introduction to Probability, Statistics, Topology and Differential Calculus, Stochastic Processes, Mathematical Modeling, Introduction to Micro and Macro Economics, Algebra and Arithmetics, Euclidean and Hermitian Spaces, Compilers, Computer Architecture</li>
-                                        <li>Committees: Founder/Board Volleyball Committee, Captain of the IPParis Volleyball Team, Member of: Music, Art, CS, Math Club committees</li>
-                                    </ul>
-                                </li>
-                            </ul>
-                        </div>
+                        <ul class="timeline">
+                            <!-- Item 1 -->
+                            <li>
+                                <div class="direction-r">
+                                    <div class="flag-wrapper">
+                                        <span class="flag">MSc Mathematics and Foundations of Computer Science</span>
+                                        <span class="time-wrapper"><span class="time">OCT 2023 - SEPT 2024</span></span>
+                                    </div>
+                                    <div class="desc">University of Oxford. Interest in Probability and Networks. Courses include Chaos Theory, Algorithmic Foundations, Graph Theory, Information Theory, Computational Game Theory, Networks. Member of various societies including Volleyball Men’s M1 University team, Hertford Orchestra, Turl Street Orchestra.</div>
+                                </div>
+                            </li>
+                            <!-- Item 2 -->
+                            <li>
+                                <div class="direction-l">
+                                    <div class="flag-wrapper">
+                                        <span class="flag">Bachelor of Science Mathematics and Computer Science</span>
+                                        <span class="time-wrapper"><span class="time">SEPT 2020 - JUN 2023</span></span>
+                                    </div>
+                                    <div class="desc">École Polytechnique. GPA: 3.94. Awards include Intel Andy Grove Scholarship. Relevant Coursework: Measure and Integration Theory, Differential Geometry, Convex Optimization and Optimal Control, Numerical Linear Algebra, Parallel and Distributed Computing, Complexity Theory, Analysis of Algorithms, and more.</div>
+                                </div>
+                            </li>
+                        </ul>
                     </div>
                 </div>
             </section>
+            
 
             <section class="section-padding" id="research">
                 <div class="container">
