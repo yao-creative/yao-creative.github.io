@@ -656,7 +656,7 @@ Timeline
   width: 10px; /* Larger width */
   height: 100%;
   margin-left: -5px; /* Adjusted for new width */
-  background: rgba(245, 245, 245, 0.9); /* Whitesmoke opaque */
+  background: rgba(245, 245, 245, 0.6); /* Whitesmoke opaque */
   z-index: 5;
 }
 
