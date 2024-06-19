@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Yi Yao Tan</title>
     <link rel="stylesheet" href="styles.css">
+    <!-- Link to Swiper CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
 </head>
 <body>
     <header>
@@ -40,50 +42,74 @@
         <p>I am a passionate individual with interests in various fields. Here, I share my journey and experiences.</p>
     </section>
 
-    <section id="research">
+    <section id="research" class="timeline">
         <h2>Research Experience</h2>
-        <div class="timeline">
-            <div class="timeline-item">
-                <h3>Networks Analysis Research Master's Thesis</h3>
-                <span>April 2024 - Sept 2024</span>
-                <p>Advisors: Renaud Lambiotte, François Lafond. Network Analysis on Production Networks: Developing a null model based on network geometry for national scale firm-level input-output networks.</p>
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide" style="background-image: url(https://unsplash.it/1920/500?image=101)" data-year="2024">
+                    <div class="swiper-slide-content">
+                        <span class="timeline-year">2024</span>
+                        <h4 class="timeline-title">Networks Analysis Research Master's Thesis</h4>
+                        <p class="timeline-text">Advisors: Renaud Lambiotte, François Lafond. Network Analysis on Production Networks: Developing a null model based on network geometry for national scale firm-level input-output networks.</p>
+                    </div>
+                </div>
+                <div class="swiper-slide" style="background-image: url(https://unsplash.it/1920/500?image=102)" data-year="2023">
+                    <div class="swiper-slide-content">
+                        <span class="timeline-year">2023</span>
+                        <h4 class="timeline-title">Transformer Image Segmentation Research Intern</h4>
+                        <p class="timeline-text">Huawei Research Center. Advisors: Chong Li, Serge Petiton. Created a complete Transformer Image Segmentation Encoder-Decoder pipeline on ADE20k and model from scratch in mindspore. Integrated own customizable sparse attention into the model and analyzed convergences and attention intermediate layer attention maps on ADE20k and ImageNet-1k datasets. Held seminar for Huawei researchers of related departments. <a href="https://drive.google.com/file/d/17GK_U6A_BJJWpe7aI4YoQmDiVWY2DfW9/view?usp=sharing">Manuscript</a></p>
+                    </div>
+                </div>
+                <div class="swiper-slide" style="background-image: url(https://unsplash.it/1920/500?image=103)" data-year="2022">
+                    <div class="swiper-slide-content">
+                        <span class="timeline-year">2022</span>
+                        <h4 class="timeline-title">Combinatorics and Informatics Student</h4>
+                        <p class="timeline-text">École Polytechnique, LiX, Team Combi. Advisor: Jeremie Bettinelli. Developed a library for the simulation of random uniform generation of combinatorial structures counted by Catalan Numbers on Mathematica and Python. Created python library to uniformly generate the structures: dyck paths, non-crossing pair partitions, rooted plane trees, binary trees using natural bijections between different combinatorial objects. <a href="https://drive.google.com/file/d/1YlgMq4TB9w1t9uBqejJcGC39amfyZmiv/view?usp=sharing">Manuscript</a></p>
+                    </div>
+                </div>
+                <div class="swiper-slide" style="background-image: url(https://unsplash.it/1920/500?image=104)" data-year="2022">
+                    <div class="swiper-slide-content">
+                        <span class="timeline-year">2022</span>
+                        <h4 class="timeline-title">High Performance Computing Research Intern</h4>
+                        <p class="timeline-text">Huawei Research Center. Advisors: Chong Li, Serge Petiton. Developed and verified a Customizable Sparse attention mechanism on Huawei’s MindSpore ML framework on top of BERT, Transformer-based ML, attention layers. Provided analysis of the sparse vs. dense attention layer operator performance. Received a personal commendation to Huawei HQ for exceptional work. Manuscript: On request.</p>
+                    </div>
+                </div>
+                <div class="swiper-slide" style="background-image: url(https://unsplash.it/1920/500?image=105)" data-year="2021">
+                    <div class="swiper-slide-content">
+                        <span class="timeline-year">2021</span>
+                        <h4 class="timeline-title">Bioinformatics Research Intern</h4>
+                        <p class="timeline-text">École Polytechnique, BIOC. Advisor: Thomas Gaillard. Proposed a robust method on protein clustering based on vectorization of the residue to residue connections which identified key substructures identifying different protein conformations. Used Pymol protein modeling, T-SNE, Hierarchical clustering, to perform unsupervised clustering of cylin-dependent kinase 2 (CDK2). Developed an almost fully automated technique which out performed instructor proposed RMSD and Dihedral Clustering methods in classifying the three major conformations of the CDK2 proteins with an F1 score of 0.93 to 0.54 and 0.79 respectively. <a href="https://doi.org/10.1101/2021.09.05.459014">Manuscript</a></p>
+                    </div>
+                </div>
             </div>
-            <div class="timeline-item">
-                <h3>Transformer Image Segmentation Research Intern</h3>
-                <span>Jan 2023 - Mar 2023</span>
-                <p>Huawei Research Center. Advisors: Chong Li, Serge Petiton. Created a complete Transformer Image Segmentation Encoder-Decoder pipeline on ADE20k and model from scratch in mindspore. Integrated own customizable sparse attention into the model and analyzed convergences and attention intermediate layer attention maps on ADE20k and ImageNet-1k datasets. Held seminar for Huawei researchers of related departments. Manuscript: <a href="https://drive.google.com/file/d/17GK_U6A_BJJWpe7aI4YoQmDiVWY2DfW9/view?usp=sharing">Link</a></p>
-            </div>
-            <div class="timeline-item">
-                <h3>Combinatorics and Informatics Student</h3>
-                <span>Sept 2022 - Dec 2022</span>
-                <p>École Polytechnique, LiX, Team Combi. Advisor: Jeremie Bettinelli. Developed a library for the simulation of random uniform generation of combinatorial structures counted by Catalan Numbers on Mathematica and Python. Created python library to uniformly generate the structures: dyck paths, non-crossing pair partitions, rooted plane trees, binary trees using natural bijections between different combinatorial objects. Manuscript: <a href="https://drive.google.com/file/d/1YlgMq4TB9w1t9uBqejJcGC39amfyZmiv/view?usp=sharing">Link</a></p>
-            </div>
-            <div class="timeline-item">
-                <h3>High Performance Computing Research Intern</h3>
-                <span>Jun 2022 - Sept 2022</span>
-                <p>Huawei Research Center. Advisors: Chong Li, Serge Petiton. Developed and verified a Customizable Sparse attention mechanism on Huawei’s MindSpore ML framework on top of BERT, Transformer-based ML, attention layers. Provided analysis of the sparse vs. dense attention layer operator performance. Received a personal commendation to Huawei HQ for exceptional work. Manuscript: On request.</p>
-            </div>
-            <div class="timeline-item">
-                <h3>Bioinformatics Research Intern</h3>
-                <span>Jun 2021 - Sept 2021</span>
-                <p>École Polytechnique, BIOC. Advisor: Thomas Gaillard. Proposed a robust method on protein clustering based on vectorization of the residue to residue connections which identified key substructures identifying different protein conformations. Used Pymol protein modeling, T-SNE, Hierarchical clustering, to perform unsupervised clustering of cylin-dependent kinase 2 (CDK2). Developed an almost fully automated technique which out performed instructor proposed RMSD and Dihedral Clustering methods in classifying the three major conformations of the CDK2 proteins with an F1 score of 0.93 to 0.54 and 0.79 respectively. Manuscript: <a href="https://doi.org/10.1101/2021.09.05.459014">Link</a></p>
-            </div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-pagination"></div>
         </div>
     </section>
 
-    <section id="education">
+    <section id="education" class="timeline">
         <h2>Education</h2>
-        <div class="timeline">
-            <div class="timeline-item">
-                <h3>MSc Mathematics and Foundations of Computer Science, University of Oxford</h3>
-                <span>OCT 2023 - SEPT 2024</span>
-                <p>Interest in Probability and Networks. Courses: Chaos Theory and Non Linear Dynamics, Algorithmic Foundations of Collective Decision Making, Probabilistic Combinatorics, Graph Theory, Information Theory, Computational Game Theory, Networks. Seminars: Networks, Complexity Economics. Societies: Volleyball Men’s M1 University team, Hertford Orchestra, Turl Street Orchestra.</p>
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide" style="background-image: url(https://unsplash.it/1920/500?image=106)" data-year="2024">
+                    <div class="swiper-slide-content">
+                        <span class="timeline-year">2024</span>
+                        <h4 class="timeline-title">MSc Mathematics and Foundations of Computer Science, University of Oxford</h4>
+                        <p class="timeline-text">Interest in Probability and Networks. Courses: Chaos Theory and Non Linear Dynamics, Algorithmic Foundations of Collective Decision Making, Probabilistic Combinatorics, Graph Theory, Information Theory, Computational Game Theory, Networks. Seminars: Networks, Complexity Economics. Societies: Volleyball Men’s M1 University team, Hertford Orchestra, Turl Street Orchestra.</p>
+                    </div>
+                </div>
+                <div class="swiper-slide" style="background-image: url(https://unsplash.it/1920/500?image=107)" data-year="2023">
+                    <div class="swiper-slide-content">
+                        <span class="timeline-year">2023</span>
+                        <h4 class="timeline-title">Bachelor of Science Mathematics and Computer Science, École Polytechnique</h4>
+                        <p class="timeline-text">GPA: 3.94. Awards: Intel Andy Grove Scholarship, Outstanding Student in contribution to the Ecole Polytechnique Community. Relevant Coursework: Measure and Integration Theory, Differential Geometry, Convex Optimization and Optimal Control, Numerical Linear Algebra, Parallel and Distributed Computing, Numerical Analysis, Complexity Theory, Analysis of Algorithms, Introduction to Probability, Statistics, Topology and Differential Calculus, Stochastic Processes, Mathematical Modeling, Introduction to Micro and Macro Economics, Algebra and Arithmetics, Euclidean and Hermitian Spaces, Compilers, Computer Architecture. Committees: Founder/ Board Volleyball Committee, Captain of the IPParis Volleyball Team, Member of: Music, Art, CS, Math Club committees.</p>
+                    </div>
+                </div>
             </div>
-            <div class="timeline-item">
-                <h3>Bachelor of Science Mathematics and Computer Science, École Polytechnique</h3>
-                <span>SEPT 2020 - JUN 2023</span>
-                <p>GPA: 3.94. Awards: Intel Andy Grove Scholarship, Outstanding Student in contribution to the Ecole Polytechnique Community. Relevant Coursework: Measure and Integration Theory, Differential Geometry, Convex Optimization and Optimal Control, Numerical Linear Algebra, Parallel and Distributed Computing, Numerical Analysis, Complexity Theory, Analysis of Algorithms, Introduction to Probability, Statistics, Topology and Differential Calculus, Stochastic Processes, Mathematical Modeling, Introduction to Micro and Macro Economics, Algebra and Arithmetics, Euclidean and Hermitian Spaces, Compilers, Computer Architecture. Committees: Founder/ Board Volleyball Committee, Captain of the IPParis Volleyball Team, Member of: Music, Art, CS, Math Club committees.</p>
-            </div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-pagination"></div>
         </div>
     </section>
 
@@ -127,5 +153,10 @@
     <footer>
         <p>Template inspired by Vrushank Agrawal's website.</p>
     </footer>
+
+    <!-- Swiper JS -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <!-- Custom JS -->
+    <script src="scripts.js"></script>
 </body>
 </html>
