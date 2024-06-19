@@ -336,7 +336,7 @@ strong {
 .hero {
   position: relative;
   height: 100vh;
-  background: linear-gradient(to top, #000, transparent 90%);
+  background: url('../images/hero.jpg');
   display: flex;
   justify-content: center;
   align-items: center;
@@ -1107,4 +1107,17 @@ body {
     padding: 1em;
     z-index: 15;
   }
+}
+
+#education {
+  background: url('../images/education/oxford3.jpg') no-repeat center center/cover;
+  padding: 4rem 0;
+  /* color: white; Adjust text color for readability */
+}
+
+#research {
+  background: url('../images/research/jade_vine.jpg') no-repeat center center/cover;
+  padding: 4rem 0;
+  color: white; 
+  /* Adjust text color for readability */
 }
