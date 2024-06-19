@@ -693,7 +693,7 @@ Timeline
 .flag-wrapper {
   position: relative;
   display: inline-block;
-  background: rgba(0, 0, 0, 0.3); /* Translucent background */
+  background: rgba(0, 0, 0, 0.8); /* Translucent background */
   padding: 10px; /* Add some padding */
   border-radius: 5px; /* Round the corners */
   text-align: center;
@@ -758,14 +758,14 @@ Timeline
 
 .direction-l .flag:after {
   left: 100%;
-  border-left-color: rgba(0, 0, 0, 0.2);
+  border-left-color: rgba(0, 0, 0, 0.3);
   border-width: 8px;
 }
 
 .direction-r .flag:after {
   right: 100%;
   left: auto;
-  border-right-color: rgba(0, 0, 0, 0.2);
+  border-right-color: rgba(0, 0, 0, 0.3);
   border-width: 8px;
 }
 
