@@ -357,6 +357,7 @@ strong {
 .section-padding {
   padding-top: 4rem;
   padding-bottom: 4rem;
+  color: white;
 }
 
 @media screen and (max-width: 767px) {
@@ -367,8 +368,6 @@ strong {
   .heroText p {
       font-size: 1rem;
   }
-}
-
 }
 
 /*---------------------------------------
@@ -540,6 +539,7 @@ strong {
 .section-padding {
   padding-top: 7rem;
   padding-bottom: 7rem;
+  color: white;
 }
 
 /*---------------------------------------
@@ -633,241 +633,15 @@ strong {
   color: var(--primary-color);
 }
 
-/*---------------------------------------
-  TIME LINE
------------------------------------------*/
-/* Variables */
 
-:root {
-  --timeline-background: #252827;
-  --timeline-color-primary: #004ffc;
-  --timeline-color-light: white;
-  --timeline-color-dim: #6c6d6d;
-  --timeline-spacing: 50px;
-  --timeline-radius: 4px;
-  --timeline-date: 120px;
-  --timeline-dotborder: 4px;
-  --timeline-dot: 11px;
-  --timeline-line: 4px;
-  --timeline-font-title: 'Saira', sans-serif;
-  --timeline-font-text: 'Chivo', sans-serif;
-}
-
-/* Base */
-
-#timeline-content {
-  background: var(--timeline-background);
-  color: var(--timeline-color-light);
-  font-size: 16px;
-  margin-top: var(--timeline-spacing);
-  text-align: center;
-}
-
-#timeline-content p {
-  font-weight: 300;
-}
-
-#timeline-content a { 
-  color: var(--timeline-color-dim);
-  text-decoration: none;
-  text-transform: uppercase;
-  display: block;
-  letter-spacing: .3em;
-  font-size: .6em;
-  font-weight: 400;
-  background: #252727;
-  padding: .3rem 1rem;
-  margin: 1.9rem 0 0 0;
-  float: right;
-}
-
-#timeline-content a:hover { 
-  color: var(--timeline-color-light);
-  background: var(--timeline-color-primary);
-  border-bottom: .35em solid black;
-}
-
-#timeline-content strong {
-  font-weight: 600;
-}
-
-#timeline-content h1 {
- font-family: var(--timeline-font-title);
- letter-spacing: 1.5px;
- color: var(--timeline-color-light);  
- font-weight: 400;
- font-size: 2.4em;
-}
-
-/* Timeline */
-
-.timeline {
-  border-left: var(--timeline-line) solid black;
-  border-bottom-right-radius: var(--timeline-radius);
-  border-top-right-radius: var(--timeline-radius);    
-  background: rgba(255, 255, 255, 0.03);
-  color: rgba(255, 255, 255, 0.8);
-  font-family: var(--timeline-font-text);  
-  margin: var(--timeline-spacing) auto;  
-  letter-spacing: 0.5px;   
-  position: relative;
-  line-height: 1.4em;
-  font-size: 1.03em;   
-  padding: var(--timeline-spacing);   
-  list-style: none;
-  text-align: left;  
-  font-weight: 100;  
-  max-width: 30%; 
-}
-
-.timeline h1 {
- font-family: var(--timeline-font-title);
- letter-spacing: 1.5px;
- font-weight: 100;
- font-size: 1.4em;    
-}
-
-.timeline h2, .timeline h3 {
- font-family: var(--timeline-font-title);
- letter-spacing: 1.5px;
- font-weight: 400;
- font-size: 1.4em;
-}
-
-.timeline .event {
-  border-bottom: 1px dashed rgba(255, 255, 255, 0.1);
-  padding-bottom: calc(var(--timeline-spacing) * 0.5);
-  margin-bottom: var(--timeline-spacing);  
-  position: relative;
-}
-
-.timeline .event:last-of-type { 
-  padding-bottom: 0;
-  margin-bottom: 0; 
-  border: none;      
-}
-
-.timeline .event:before, .timeline .event:after {
-  position: absolute;
-  display: block;
-  top: 0;
-}
-
-.timeline .event:before {
-  left: calc((var(--timeline-date) * 0.6) + var(--timeline-spacing) + var(--timeline-line) + var(--timeline-dot) + (var(--timeline-dotborder) * 2)) * -1;    
-  color: rgba(255, 255, 255, 0.4);    
-  content: attr(data-date);
-  text-align: right;
-  font-weight: 100;    
-  font-size: 0.9em;
-  min-width: var(--timeline-date);
-  font-family: var(--timeline-font-title);
-}
-
-.timeline .event:after {
-  box-shadow: 0 0 0 var(--timeline-dotborder) rgba(0, 79, 252, 1);    
-  left: calc(var(--timeline-spacing) + var(--timeline-line) + (var(--timeline-dot) * 0.35)) * -1;        
-  background: lighten(var(--timeline-background), 5%);    
-  border-radius: 50%;  
-  height: var(--timeline-dot);
-  width: var(--timeline-dot);
-  content: "";
-  top: 5px;
-}
-
-/*---------------------------------------
-  RESPONSIVE STYLES               
------------------------------------------*/
-@media screen and (min-width: 1600px) {
-  .news-two-column {
-    min-height: 232.5px;
-  }
-}
-
-@media screen and (max-width: 991px) {
-  h1 {
-    font-size: 48px;
-  }
-
-  h2 {
-    font-size: 36px;
-  }
-
-  h3 {
-    font-size: 32px;
-  }
-
-  h4 {
-    font-size: 28px;
-  }
-
-  h5 {
-    font-size: 20px;
-  }
-
-  h6 {
-    font-size: 18px;
-  }
-
-  .navbar {
-    padding-top: 10px;
-    padding-bottom: 10px;
-  }
-
-  .section-padding {
-    padding-top: 6rem;
-    padding-bottom: 6rem;
-  }
-
-  .team-thumb {
-    left: 0;
-    width: auto;
-  }
-
-  .news-two-column {
-    height: auto !important;
-    min-height: inherit;
-  }
-
-  .news .col-12 .news-two-column:first-child {
-    margin-bottom: 38px;
-  }
-}
-
-@media screen and (max-width: 767px) {
-  .news-detail-title {
-    font-size: 36px;
-  }
-}
-
-@media screen and (max-width: 360px) {
-  h1 {
-    font-size: 32px;
-  }
-
-  .heroText p {
-    font-size: 14px;
-  }
-}
-
-@media screen and (max-width: 359px) {
-  .news-detail-title {
-    font-size: 22px;
-  }
-}
-
-
-body {
-  font-family: 'Open Sans', sans-serif;
-  font-size: 112.5%;
-  line-height: 1.6em;
-}
-
+/*---------------------------
+Timeline
+-----------------------------*/
 /* The Timeline */
 .timeline {
   position: relative;
   width: 100%;
-  max-width: 660px;
+  max-width: 1000px; /* Adjust max-width to fit the new widths */
   margin: 0 auto;
   padding: 1em 0;
   list-style-type: none;
@@ -879,11 +653,10 @@ body {
   top: 0;
   content: ' ';
   display: block;
-  width: 6px;
+  width: 10px; /* Larger width */
   height: 100%;
-  margin-left: -3px;
-  background: rgb(80,80,80);
-  background: linear-gradient(to bottom, rgba(80,80,80,0) 0%, rgb(80,80,80) 8%, rgb(80,80,80) 92%, rgba(80,80,80,0) 100%);
+  margin-left: -5px; /* Adjusted for new width */
+  background: rgba(245, 245, 245, 0.9); /* Whitesmoke opaque */
   z-index: 5;
 }
 
@@ -899,119 +672,135 @@ body {
   visibility: hidden;
 }
 
-.direction-l {
+.direction-l, .direction-r {
   position: relative;
-  width: 300px;
-  float: left;
+  width: 500px; /* Change width to 500px */
   text-align: right;
 }
 
+.direction-l {
+  float: left;
+  text-align: right;
+  margin-right: -280px; /* Increase spacing from the timeline */
+}
+
 .direction-r {
-  position: relative;
-  width: 300px;
   float: right;
+  text-align: left;
+  margin-left: -280px; /* Increase spacing from the timeline */
 }
 
 .flag-wrapper {
   position: relative;
   display: inline-block;
+  background: rgba(0, 0, 0, 0.3); /* Translucent background */
+  padding: 10px; /* Add some padding */
+  border-radius: 5px; /* Round the corners */
   text-align: center;
 }
 
 .flag {
   position: relative;
-  display: inline;
-  background: rgb(248,248,248);
-  padding: 6px 10px;
-  border-radius: 5px;
-  font-weight: 600;
+  display: inline-block;
+  font-weight: bold;
   text-align: left;
-  color: black; /* Change to default black color */
+  color: whitesmoke; /* Keep text color as whitesmoke */
+  font-size: 1.5em; /* Increase font size for emphasis */
+  text-decoration: underline; /* Add underline */
+  background: none; /* Remove background */
+  box-shadow: none; /* Remove box shadow */
 }
 
-.direction-l .flag {
-  box-shadow: -1px 1px 1px rgba(0,0,0,0.15), 0 0 1px rgba(0,0,0,0.15);
+.direction-l .flag, .direction-r .flag {
+  box-shadow: none; /* Remove box shadow */
 }
 
-.direction-r .flag {
-  box-shadow: 1px 1px 1px rgba(0,0,0,0.15), 0 0 1px rgba(0,0,0,0.15);
-}
-
-.direction-l .flag:before,
-.direction-r .flag:before {
+.direction-l .flag:before {
   position: absolute;
   top: 50%;
-  right: -40px;
+  right: -16px; /* Position the dot on the right of the item */
   content: ' ';
   display: block;
   width: 12px;
   height: 12px;
-  margin-top: -10px;
-  background: #fff;
-  border-radius: 10px;
+  margin-top: -6px; /* Center the dot vertically */
+  background: whitesmoke; /* Dot color */
+  border-radius: 50%;
   border: 4px solid black; /* Change border color to default black */
   z-index: 10;
 }
 
 .direction-r .flag:before {
-  left: -40px;
+  position: absolute;
+  top: 50%;
+  left: -16px; /* Position the dot on the left of the item */
+  content: ' ';
+  display: block;
+  width: 12px;
+  height: 12px;
+  margin-top: -6px; /* Center the dot vertically */
+  background: whitesmoke; /* Dot color */
+  border-radius: 50%;
+  border: 4px solid black; /* Change border color to default black */
+  z-index: 10;
+}
+
+.direction-l .flag:after, .direction-r .flag:after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  height: 0;
+  width: 0;
+  margin-top: -8px;
+  border: solid transparent;
+  pointer-events: none;
 }
 
 .direction-l .flag:after {
-  content: "";
-  position: absolute;
   left: 100%;
-  top: 50%;
-  height: 0;
-  width: 0;
-  margin-top: -8px;
-  border: solid transparent;
-  border-left-color: rgb(248,248,248);
+  border-left-color: rgba(0, 0, 0, 0.2);
   border-width: 8px;
-  pointer-events: none;
 }
 
 .direction-r .flag:after {
-  content: "";
-  position: absolute;
   right: 100%;
-  top: 50%;
-  height: 0;
-  width: 0;
-  margin-top: -8px;
-  border: solid transparent;
-  border-right-color: rgb(248,248,248);
+  left: auto;
+  border-right-color: rgba(0, 0, 0, 0.2);
   border-width: 8px;
-  pointer-events: none;
 }
 
 .time-wrapper {
-  display: inline;
+  display: block;
   line-height: 1em;
   font-size: 0.66666em;
-  color: black; /* Change time color to default black */
+  color: whitesmoke; /* Time color */
   vertical-align: middle;
-}
-
-.direction-l .time-wrapper {
-  float: left;
-}
-
-.direction-r .time-wrapper {
-  float: right;
+  background: none; /* Remove background */
+  padding: 0; /* Remove padding */
+  text-align: center;
+  margin-top: 5px; /* Adjust margin to position below the title */
 }
 
 .time {
   display: inline-block;
-  padding: 4px 6px;
-  background: rgb(248,248,248);
+  padding: 0; /* Remove padding */
+  background: none; /* Remove background */
 }
 
+.direction-l .time-wrapper {
+  float: none; /* Remove float to center align */
+}
+
+.direction-r .time-wrapper {
+  float: none; /* Remove float to center align */
+}
 .desc {
-  margin: 1em 0.75em 0 0;
+  margin: 1em 1em 0 0;
   font-size: 0.77777em;
   font-style: italic;
   line-height: 1.5em;
+  background: rgba(0, 0, 0, 0.2);
+  padding: 10px;
 }
 
 .direction-r .desc {
@@ -1112,12 +901,41 @@ body {
 #education {
   background: url('../images/education/oxford3.jpg') no-repeat center center/cover;
   padding: 4rem 0;
-  /* color: white; Adjust text color for readability */
+  color: whitesmoke; /* Adjust text color for readability */
 }
 
 #research {
   background: url('../images/research/jade_vine.jpg') no-repeat center center/cover;
   padding: 4rem 0;
-  color: white; 
+  color: whitesmoke; 
   /* Adjust text color for readability */
+}
+
+/* Change font color to white for Education and Research sections */
+#education, #research {
+  color: whitesmoke; /* Or use #FFFFFF for pure white */
+}
+
+/* Optionally, target headings within these sections to ensure they are white as well */
+#research p, #education p {
+  color: whitesmoke; /* Or use #FFFFFF for pure white */
+}
+#education h2, #research h2,
+#education h3, #research h3,
+#education h4, #research h4,
+#education h5, #research h5,
+#education h6, #research h6 {
+  color: whitesmoke; /* Or use #FFFFFF for pure white */
+}
+
+/* Ensure the project description text is black */
+#projects p, #skills p, #certifications p {
+  color: var(--dark-color) !important; /* Or use #000000 for pure black */
+}
+
+/* Ensure headings within the projects, skills, and certifications sections are black as well */
+#projects h2, #projects h3, #projects h4, #projects h5, #projects h6, #projects ul,
+#skills h2, #skills h3, #skills h4, #skills h5, #skills h6, #skills ul,
+#certifications h2, #certifications h3, #certifications h4, #certifications h5, #certifications h6, #certifications ul{
+  color: var(--dark-color) !important; /* Or use #000000 for pure black */
 }
