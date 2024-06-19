@@ -1,147 +1,283 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Yi Yao Tan</title>
-    <link rel="stylesheet" href="css/timeline.css">
-</head>
-<body>
-    <header>
-        <h1>Welcome to My Portfolio</h1>
-        <nav>
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About Me</a></li>
-                <li><a href="#research">Research</a></li>
-                <li><a href="#education">Education</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#blog">Blog</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
-    <section id="home">
-        <h2>Home</h2>
-        <p>Hello! I am Yi Yao Tan, welcome to my personal website.</p>
-    </section>
-
-    <section id="contact-info">
-        <p>Phone: (+44) 07919 688 382<br>
-        Email: <a href="mailto:yytanacademic@gmail.com">yytanacademic@gmail.com</a><br>
-        Location: Oxford, UK<br>
-        GitHub: <a href="https://github.com/yao-creative">github.com/yao-creative</a><br>
-        LinkedIn: <a href="https://www.linkedin.com/in/yi-yao-tan-9719301a3/">linkedin.com/in/yi-yao-tan-9719301a3</a></p>
-    </section>
-
-    <section id="about">
-        <h2>About Me</h2>
-        <p>I am a passionate individual with interests in various fields. Here, I share my journey and experiences.</p>
-    </section>
-
-    <section id="research" class="timeline">
-        <h2>Research Experience</h2>
-        <ul>
-            <li>
-                <div class="content">
-                    <h3>Networks Analysis Research Master's Thesis</h3>
-                    <span>April 2024 - Sept 2024</span>
-                    <p>Advisors: Renaud Lambiotte, François Lafond. Network Analysis on Production Networks: Developing a null model based on network geometry for national scale firm-level input-output networks.</p>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="">
+        <meta name="author" content="">
+        <title>Yi Yao Tan's Resume</title>
+        <!-- CSS FILES -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;300;400;700;900&display=swap" rel="stylesheet">
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+        <link href="css/bootstrap-icons.css" rel="stylesheet">
+        <link rel="stylesheet" href="css/magnific-popup.css">
+        <link href="css/aos.css" rel="stylesheet">
+        <link href="css/templatemo-nomad-force.css" rel="stylesheet">
+    </head>
+    <body>
+        <main>
+            <section class="hero" id="hero">
+                <div class="heroText">
+                    <h1 class="text-white mt-5 mb-lg-4" data-aos="zoom-in" data-aos-delay="800">
+                        Yi Yao Tan
+                    </h1>
+                    <p class="text-secondary-white-color" data-aos="fade-up" data-aos-delay="1000">
+                        Oxford, UK | (+44) 07919 688 382 | yytanacademic@gmail.com
+                    </p>
+                    <p class="text-secondary-white-color" data-aos="fade-up" data-aos-delay="1200">
+                        Portfolio: <a href="https://github.com/yao-creative">github.com/yao-creative</a> | LinkedIn: <a href="https://www.linkedin.com/in/yi-yao-tan-9719301a3/">linkedin.com/in/yi-yao-tan-9719301a3</a>
+                    </p>
                 </div>
-            </li>
-            <li>
-                <div class="content">
-                    <h3>Transformer Image Segmentation Research Intern</h3>
-                    <span>Jan 2023 - Mar 2023</span>
-                    <p>Huawei Research Center. Advisors: Chong Li, Serge Petiton. Created a complete Transformer Image Segmentation Encoder-Decoder pipeline on ADE20k and model from scratch in mindspore. Integrated own customizable sparse attention into the model and analyzed convergences and attention intermediate layer attention maps on ADE20k and ImageNet-1k datasets. Held seminar for Huawei researchers of related departments. <a href="https://drive.google.com/file/d/17GK_U6A_BJJWpe7aI4YoQmDiVWY2DfW9/view?usp=sharing">Manuscript</a></p>
-                </div>
-            </li>
-            <li>
-                <div class="content">
-                    <h3>Combinatorics and Informatics Student</h3>
-                    <span>Sept 2022 - Dec 2022</span>
-                    <p>École Polytechnique, LiX, Team Combi. Advisor: Jeremie Bettinelli. Developed a library for the simulation of random uniform generation of combinatorial structures counted by Catalan Numbers on Mathematica and Python. Created python library to uniformly generate the structures: dyck paths, non-crossing pair partitions, rooted plane trees, binary trees using natural bijections between different combinatorial objects. <a href="https://drive.google.com/file/d/1YlgMq4TB9w1t9uBqejJcGC39amfyZmiv/view?usp=sharing">Manuscript</a></p>
-                </div>
-            </li>
-            <li>
-                <div class="content">
-                    <h3>High Performance Computing Research Intern</h3>
-                    <span>Jun 2022 - Sept 2022</span>
-                    <p>Huawei Research Center. Advisors: Chong Li, Serge Petiton. Developed and verified a Customizable Sparse attention mechanism on Huawei’s MindSpore ML framework on top of BERT, Transformer-based ML, attention layers. Provided analysis of the sparse vs. dense attention layer operator performance. Received a personal commendation to Huawei HQ for exceptional work. Manuscript: On request.</p>
-                </div>
-            </li>
-            <li>
-                <div class="content">
-                    <h3>Bioinformatics Research Intern</h3>
-                    <span>Jun 2021 - Sept 2021</span>
-                    <p>École Polytechnique, BIOC. Advisor: Thomas Gaillard. Proposed a robust method on protein clustering based on vectorization of the residue to residue connections which identified key substructures identifying different protein conformations. Used Pymol protein modeling, T-SNE, Hierarchical clustering, to perform unsupervised clustering of cylin-dependent kinase 2 (CDK2). Developed an almost fully automated technique which out performed instructor proposed RMSD and Dihedral Clustering methods in classifying the three major conformations of the CDK2 proteins with an F1 score of 0.93 to 0.54 and 0.79 respectively. <a href="https://doi.org/10.1101/2021.09.05.459014">Manuscript</a></p>
-                </div>
-            </li>
-        </ul>
-    </section>
+                <div class="overlay"></div>
+            </section>
 
-    <section id="education" class="timeline">
-        <h2>Education</h2>
-        <ul>
-            <li>
-                <div class="content">
-                    <h3>MSc Mathematics and Foundations of Computer Science, University of Oxford</h3>
-                    <span>OCT 2023 - SEPT 2024</span>
-                    <p>Interest in Probability and Networks. Courses: Chaos Theory and Non Linear Dynamics, Algorithmic Foundations of Collective Decision Making, Probabilistic Combinatorics, Graph Theory, Information Theory, Computational Game Theory, Networks. Seminars: Networks, Complexity Economics. Societies: Volleyball Men’s M1 University team, Hertford Orchestra, Turl Street Orchestra.</p>
+            <nav class="navbar navbar-expand-lg bg-light shadow-lg">
+                <div class="container">
+                    <a class="navbar-brand" href="index.html">
+                        <strong>Yi Yao Tan</strong>
+                    </a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav mx-auto">
+                            <li class="nav-item active">
+                                <a class="nav-link" href="#hero">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#education">Education</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#research">Research Experience</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#projects">Projects</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#skills">Skills</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#contact">Contact</a>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
-            </li>
-            <li>
-                <div class="content">
-                    <h3>Bachelor of Science Mathematics and Computer Science, École Polytechnique</h3>
-                    <span>SEPT 2020 - JUN 2023</span>
-                    <p>GPA: 3.94. Awards: Intel Andy Grove Scholarship, Outstanding Student in contribution to the Ecole Polytechnique Community. Relevant Coursework: Measure and Integration Theory, Differential Geometry, Convex Optimization and Optimal Control, Numerical Linear Algebra, Parallel and Distributed Computing, Numerical Analysis, Complexity Theory, Analysis of Algorithms, Introduction to Probability, Statistics, Topology and Differential Calculus, Stochastic Processes, Mathematical Modeling, Introduction to Micro and Macro Economics, Algebra and Arithmetics, Euclidean and Hermitian Spaces, Compilers, Computer Architecture. Committees: Founder/ Board Volleyball Committee, Captain of the IPParis Volleyball Team, Member of: Music, Art, CS, Math Club committees.</p>
+            </nav>
+
+            <section class="section-padding" id="education">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12">
+                            <h2 class="mb-5 text-center" data-aos="fade-up">Education</h2>
+                        </div>
+                        <div class="col-lg-6 col-12" data-aos="fade-up">
+                            <h3>Msc Mathematics and Foundations of Computer Science</h3>
+                            <p>University of Oxford, OCT 2023 - SEPT 2024</p>
+                            <ul>
+                                <li>Interest in Probability and Networks.</li>
+                                <li>Courses: Chaos Theory and Non Linear Dynamics, Algorithmic Foundations of Collective Decision Making, Probabilistic Combinatorics, Graph Theory, Information Theory, Computational Game Theory, Networks</li>
+                                <li>Seminars: Networks (Mathematical Institute), Complexity Economics (INET)</li>
+                                <li>Societies: Volleyball Men’s M1 University team, Hertford Orchestra, Turl Street Orchestra</li>
+                            </ul>
+                        </div>
+                        <div class="col-lg-6 col-12" data-aos="fade-up">
+                            <h3>Bachelor of Science Mathematics and Computer Science</h3>
+                            <p>École Polytechnique, SEPT 2020 - JUN 2023</p>
+                            <p>GPA: 3.94</p>
+                            <p>Awards: Intel Andy Grove Scholarship, Outstanding Student in contribution to the Ecole Polytechnique Community</p>
+                            <p>Relevant Coursework: Measure and Integration Theory, Differential Geometry, Convex Optimization and Optimal Control, Numerical Linear Algebra, Parallel and Distributed Computing, Numerical Analysis, Complexity Theory, Analysis of Algorithms, Introduction to Probability, Statistics, Topology and Differential Calculus, Stochastic Processes, Mathematical Modeling, Introduction to Micro and Macro Economics, Algebra and Arithmetics, Euclidean and Hermitian Spaces, Compilers, Computer Architecture</p>
+                            <p>Committees: Founder/Board Volleyball Committee, Captain of the IPParis Volleyball Team, Member of: Music, Art, CS, Math Club committees.</p>
+                        </div>
+                    </div>
                 </div>
-            </li>
-        </ul>
-    </section>
+            </section>
 
-    <section id="projects">
-        <h2>Projects</h2>
-        <div class="project-item">
-            <h3>Parallel Delta Stepping SSSP</h3>
-            <span>April 2023 - Jun 2023</span>
-            <p>Advisor: Eric Goubault. Parallelized single source shortest path search on randomly simulated graphs using delta-step algorithm in C++, a bucketing method based on Dijkstra and Bellman-Ford Algorithms. Project repository: <a href="https://github.com/Kev1MSL/cse305-project">GitHub Link</a>. Project paper: <a href="https://drive.google.com/file/d/15Tj0oIWqcibvI_o_mmhf1mDwiYWGufjf/view?usp=sharing">Link</a></p>
-        </div>
-        <div class="project-item">
-            <h3>Trinomial Modeling</h3>
-            <span>April 2021 - Jun 2021</span>
-            <p>Advisor: Thibaut Mastrolia. Responsible for the one step Trinomial Model simulation code and numerical analysis of the equations. Performed Experimentation to verify numerical analysis of the equations. Preprint + Project repository: <a href="https://github.com/yao-creative/trinomial_basic">GitHub Link</a></p>
-        </div>
-    </section>
+            <section class="section-padding" id="research">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12">
+                            <h2 class="mb-5 text-center" data-aos="fade-up">Research Experience</h2>
+                        </div>
+                        <div class="col-lg-6 col-12" data-aos="fade-up">
+                            <h3>Networks Analysis Research Master's Thesis</h3>
+                            <p>Mathematical Institute & INET, University of Oxford, April 2024 — Sept 2024</p>
+                            <ul>
+                                <li>Network Analysis on Production Networks: Developing a null model based on network geometry for national scale firm-level input-output networks.</li>
+                            </ul>
+                            <h3>Transformer Image Segmentation Research Intern</h3>
+                            <p>Huawei Research Center, Paris, France, Jan 2023 — Mar 2023</p>
+                            <ul>
+                                <li>Created a complete Transformer Image Segmentation Encoder-Decoder pipeline on ADE20k and model from scratch in mindspore</li>
+                                <li>Integrated own customizable sparse attention into the model and analyzed convergences and attention intermediate layer attention maps on ADE20k and ImageNet-1k datasets.</li>
+                                <li>Held seminar for Huawei researchers of related departments.</li>
+                                <li>Manuscript: <a href="https://drive.google.com/file/d/17GK_U6A_BJJWpe7aI4YoQmDiVWY2DfW9/view?usp=sharing">View Manuscript</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-lg-6 col-12" data-aos="fade-up">
+                            <h3>Combinatorics and Informatics Student</h3>
+                            <p>École Polytechnique, LiX, Team Combi, Sept 2022 — Dec 2022</p>
+                            <ul>
+                                <li>Developed a library for the simulation of random uniform generation of combinatorial structures counted by Catalan Numbers on Mathematica and Python.</li>
+                                <li>Created python library to uniformly generate the structures: dyck paths, non-crossing pair partitions, rooted plane trees, binary trees using natural bijections between different combinatorial objects.</li>
+                                <li>Manuscript: <a href="https://drive.google.com/file/d/1YlgMq4TB9w1t9uBqejJcGC39amfyZmiv/view?usp=sharing">View Manuscript</a></li>
+                            </ul>
+                            <h3>High Performance Computing Research Intern</h3>
+                            <p>Huawei Research Center, Paris, France, Jun 2022 — Sept 2022</p>
+                            <ul>
+                                <li>Developed and verified a Customizable Sparse attention mechanism on Huawei’s MindSpore ML framework on top of BERT, Transformer-based ML, attention layers.</li>
+                                <li>Provided analysis of the sparse vs. dense attention layer operator performance.</li>
+                                <li>Received a personal commendation to Huawei HQ for exceptional work</li>
+                                <li>Manuscript: On request.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
 
-    <section id="blog">
-        <h2>Blog</h2>
-        <p>Coming soon! Stay tuned for my latest blog posts.</p>
-    </section>
+            <section class="section-padding" id="projects">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12">
+                            <h2 class="mb-5 text-center" data-aos="fade-up">Projects</h2>
+                        </div>
+                        <div class="col-lg-6 col-12" data-aos="fade-up">
+                            <h3>Parallel Delta Stepping SSSP</h3>
+                            <p>April 2023 — Jun 2023</p>
+                            <ul>
+                                <li>Parallel shortest path graph algorithm in C++</li>
+                                <li>Advisor: Eric Goubault</li>
+                                <li>Parallelized single source shortest path search on randomly simulated graphs using delta-step algorithm C++, a bucketing method based on Dijkstra and Bellman-Ford Algorithms.</li>
+                                <li>Project repository: <a href="https://github.com/Kev1MSL/cse305-project">View Project</a></li>
+                                <li>Project paper: <a href="https://drive.google.com/file/d/15Tj0oIWqcibvI_o_mmhf1mDwiYWGufjf/view?usp=sharing">View Paper</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-lg-6 col-12" data-aos="fade-up">
+                            <h3>Trinomial Modeling</h3>
+                            <p>April 2021 — Jun 2021</p>
+                            <ul>
+                                <li>Exploratory Project on one step Trinomial Models</li>
+                                <li>Advisor: Thibaut Mastrolia</li>
+                                <li>Responsible for the one step Trinomial Model simulation code and numerical analysis of the equations</li>
+                                <li>Performed Experimentation to verify numerical analysis of the equations</li>
+                                <li>Preprint + Project repository: <a href="https://github.com/yao-creative/trinomial_basic">View Project</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
 
-    <section id="skills">
-        <h2>Skills</h2>
-        <p>Listing of my technical and soft skills.</p>
-    </section>
+            <section class="section-padding" id="skills">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12">
+                            <h2 class="mb-5 text-center" data-aos="fade-up">Skills and Certifications</h2>
+                        </div>
+                        <div class="col-lg-6 col-12" data-aos="fade-up">
+                            <h3>Languages</h3>
+                            <ul>
+                                <li>English (Native)</li>
+                                <li>Mandarin Chinese (Native)</li>
+                                <li>French (Advanced)</li>
+                                <li>Russian (Beginner)</li>
+                                <li>Italian (Beginner)</li>
+                            </ul>
+                            <h3>Programming Languages</h3>
+                            <ul>
+                                <li>Python: scipy, pandas, numpy, sympy, pymol (protein modeling), nltk (NLP)</li>
+                                <li>Machine Learning Frameworks: Mindspore, Tensorflow, TRAX, Sklearn</li>
+                                <li>Other Programming Languages: Mathematica, C++, C, Matlab, Bash, x86, Coq, Haskell, SQL</li>
+                            </ul>
+                        </div>
+                        <div class="col-lg-6 col-12" data-aos="fade-up">
+                            <h3>Certifications</h3>
+                            <ul>
+                                <li>Complexity Science (NUS-Coursera), April 2024</li>
+                                <li>TOEFL: 114, Aug 2022</li>
+                                <li>HSK 6, Nov 2021</li>
+                                <li>DELF B1, Jan 2020</li>
+                                <li>TensorFlow Specialization (Google-Coursera), Aug 2022</li>
+                                <li>NLP Specialization (DeepLearning.AI-Cousera) 3/4, Dec 2022</li>
+                                <li>Machine Learning (Stanford-Coursera), May 2021</li>
+                                <li>TESOL CAP (English Teaching Certificate), Aug 2019</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
 
-    <section id="contact">
-        <h2>Contact</h2>
-        <p>Get in touch with me through the following form.</p>
-        <form>
-            <label for="name">Name:</label>
-            <input type="text" id="name" name="name" required><br><br>
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required><br><br>
-            <label for="message">Message:</label><br>
-            <textarea id="message" name="message" required></textarea><br><br>
-            <input type="submit" value="Submit">
-        </form>
-    </section>
-    <footer>
-        <p>Template inspired by Vrushank Agrawal's website.</p>
-    </footer>
-    <!-- Custom JS -->
-    <script src="js/timeline.js"></script>
-</body>
+            <section class="section-padding" id="contact">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-7 col-12 mx-auto">
+                            <h2 class="mb-4 text-center" data-aos="fade-up">Contact</h2>
+                            <form action="#" method="post" class="contact-form" role="form" data-aos="fade-up">
+                                <div class="row">
+                                    <div class="col-lg-6 col-6">
+                                        <label for="name" class="form-label">Name <sup class="text-danger">*</sup></label>
+                                        <input type="text" name="name" id="name" class="form-control" placeholder="Full name" required>
+                                    </div>
+                                    <div class="col-lg-6 col-6">
+                                        <label for="email" class="form-label">Email <sup class="text-danger">*</sup></label>
+                                        <input type="email" name="email" id="email" pattern="[^ @]*@[^ @]*" class="form-control" placeholder="Email address" required>
+                                    </div>
+                                    <div class="col-12 my-4">
+                                        <label for="message" class="form-label">How can we help?</label>
+                                        <textarea name="message" rows="6" class="form-control" id="message" placeholder="Tell us about the project" required></textarea>
+                                    </div>
+                                    <div class="col-lg-5 col-12 mx-auto mt-5">
+                                        <button type="submit" class="form-control">Send Message</button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="google-map">
+                <iframe src="https://maps.google.com/maps?q=Oxford, UK&t=&z=13&ie=UTF8&iwloc=&output=embed" class="map-iframe" width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </section>
+        </main>
+
+        <footer class="site-footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <h5 class="text-white">
+                            <i class="bi-geo-alt-fill me-2"></i>
+                            Oxford, UK
+                        </h5>
+                        <a href="mailto:yytanacademic@gmail.com" class="custom-link mt-3 mb-5">
+                            yytanacademic@gmail.com
+                        </a>
+                    </div>
+                    <div class="col-6">
+                        <p class="copyright-text mb-0">Copyright © 2024 Yi Yao Tan
+                        <br><br>Design: <a href="https://templatemo.com/page/1" target="_parent">TemplateMo</a></p>
+                    </div>
+                    <div class="col-lg-3 col-5 ms-auto">
+                        <ul class="social-icon">
+                            <li><a href="#" class="social-icon-link bi-facebook"></a></li>
+                            <li><a href="#" class="social-icon-link bi-twitter"></a></li>
+                            <li><a href="#" class="social-icon-link bi-whatsapp"></a></li>
+                            <li><a href="#" class="social-icon-link bi-instagram"></a></li>
+                            <li><a href="#" class="social-icon-link bi-youtube"></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+        </footer>
+
+        <!-- JAVASCRIPT FILES -->
+        <script src="js/jquery.min.js"></script>
+        <script src="js/bootstrap.bundle.min.js"></script>
+        <script src="js/jquery.sticky.js"></script>
+        <script src="js/aos.js"></script>
+        <script src="js/jquery.magnific-popup.min.js"></script>
+        <script src="js/magnific-popup-options.js"></script>
+        <script src="js/scrollspy.min.js"></script>
+        <script src="js/custom.js"></script>
+    </body>
 </html>
